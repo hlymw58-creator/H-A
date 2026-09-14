@@ -492,7 +492,7 @@
     <header>
         <div class="logo" onclick="if(currentUser) showPage('homePage');">
             <i class="fa-solid fa-graduation-cap"></i>
-            منصة أ/ أبو بكر الشافعي
+            منصة الشافعي الصغير
         </div>
         <nav id="mainNav" style="display: none;">
             <ul>
@@ -532,7 +532,7 @@
                 <!-- Login Form -->
                 <form id="loginForm" onsubmit="handleLogin(event)">
                     <div class="form-group">
-                        <label>رقم الهاتف (11 رقم)</label>
+                        <label>رقم الهاتف )</label>
                         <input type="text" id="loginPhone" maxlength="11" required placeholder="01xxxxxxxxx">
                     </div>
                     <div class="form-group">
@@ -545,15 +545,15 @@
                 <!-- Register Form -->
                 <form id="registerForm" onsubmit="handleRegister(event)" style="display: none;">
                     <div class="form-group">
-                        <label>الاسم الكامل</label>
+                        <label>الاسم الطالب </label>
                         <input type="text" id="regName" required placeholder="أدخل اسمك الثلاثي أو الرباعي">
                     </div>
                     <div class="form-group">
-                        <label>رقم هاتف الطالب (11 رقم)</label>
+                        <label>رقم هاتف الطالب  </label>
                         <input type="text" id="regPhone" maxlength="11" required placeholder="01xxxxxxxxx">
                     </div>
                     <div class="form-group">
-                        <label>رقم هاتف ولي الأمر (11 رقم)</label>
+                        <label>رقم هاتف ولي الأمر </label>
                         <input type="text" id="regParentPhone" maxlength="11" required placeholder="01xxxxxxxxx">
                     </div>
                     <div class="form-group">
@@ -589,8 +589,8 @@
         <!-- Home Page -->
         <div id="homePage" class="page-section">
             <div class="hero-banner">
-                <h1>مرحباً بكم في منصة أ/ أبو بكر الشافعي</h1>
-                <p>المنصة المتخصصة في شرح العلوم الشرعية للصف الثاني الثانوي الأزهري (الترم الأول)</p>
+                <h1>مرحباً بكم في منصة  الشافعي الصغير </h1>
+                <p>المنصة المتخصصة في شرح العلوم الشرعية للصف الثاني الثانوي الأزهري </p>
             </div>
 
             <div style="text-align: center; margin-top: 2rem; display: flex; gap: 15px; justify-content: center;">
@@ -691,7 +691,7 @@
                                 <input type="text" id="adminLessonTitle" required placeholder="مثال: المحاضرة الخامسة - مراجعة عامة">
                             </div>
                             <div class="form-group">
-                                <label>رابط المحاضرة (فيديو / يوتيوب)</label>
+                                <label>رابط المحاضرة </label>
                                 <input type="url" id="adminLessonUrl" placeholder="https://www.youtube.com/watch?v=...">
                             </div>
                             <button type="submit" class="btn-submit"><i class="fa-solid fa-save"></i> حفظ المحاضرة</button>
@@ -785,13 +785,13 @@
             users: [
                 {
                     id: "admin_1",
-                    name: "أ/ أبو بكر الشافعي (المعلم)",
-                    phone: "01000000000",
-                    parentPhone: "01000000000",
+                    name: "عبد الحليم محمد الفخراني",
+                    phone: "01099442329",
+                    parentPhone: "01099442329",
                     gov: "المنوفية",
                     grade: "الصف الثاني الثانوي",
                     gender: "ذكر",
-                    password: "admin_secure_pass_2026",
+                    password: "Halem)2010",
                     role: "admin",
                     enrolledCourses: ["c_aug2", "c_sep2"]
                 }
@@ -805,22 +805,35 @@
                     description: "شرح المحاضرات التأسيسية والبدايات المقررة في شهر 8 لطلاب الصف الثاني الثانوي الأزهري.",
                     code: "AUG2026",
                     lessons: [
-                        { id: "l1", title: "المحاضرة الأولى: مقدمات ومبادئ مقرر الترم الأول", url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
-                        { id: "l2", title: "المحاضرة الثانية: شرح الدروس المقررة لشهر 8 - الجزء الأول", url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
-                        { id: "l3", title: "المحاضرة الثالثة: حل تدريبات واختبار شهر 8", url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" }
+                        { id: "l1", title: "المحاضرة 1 توحيد (خلق افعال الاعباد)", url: "https://drive.google.com/file/d/1tRQT8wGl0JBAULtHP8unHgOUvEuMAvfr/view?usp=drive_link" },
+                        { id: "l2", title: "المحاضرة 2 توحيد (التوفيق والخذلان) ", url: "https://drive.google.com/file/d/1g2ERaFdG6cBM3eAfJtzqmFP5UwQcxMt9/view?usp=drive_link" },
+                        { id: "l3", title: "المحاضرة 3 توحيد (الوعد والوعيد)", url: "https://drive.google.com/file/d/1gk4Mexrh9jf5BlmUcaDafT0c3kncq85Y/view?usp=drive_link" },
+                        { id: "14", title: "المحاضرة 4 توحيد (السعاده والشقاوه)", url: "https://drive.google.com/file/d/1fxC30t7ObU-JcnYKWfPhQkMgW-f7OHty/view?usp=drive_link" },
+                        { id: "15", title: "المحاضرة 5 فقه شافعي (كتاب الصيام الجزء الاول) ", url: "https://drive.google.com/file/d/1DnbbyVdf-DPYRegAVp14fu8NOAdWeYkl/view?usp=drive_link" },
+                        { id: "16", title: "المحاضرة 6 فقه شافعي كتاب الصيام الجزء الثاني", url: "https://drive.google.com/file/d/1QCbV_Cmxq1z9uslRzVr93pI46EmOiCAe/view?usp=drive_link" },
+                        { id: "17", title: "المحاضرة 7 فقه شافعي كتاب الصيام الجزء الثالث ", url: "https://drive.google.com/file/d/1XEqiFjjcD7AmPxXBm8f5ktMFYOIrDhW2/view?usp=drive_link" },
+                        { id: "18", title: "المحاضرة 8 فقه شافعي كتاب الصيام الجزء الرابع", url: "https://drive.google.com/file/d/1vGMqN_XRKk0v-jkOQBHdQVZV-bZC3qeL/view?usp=drive_link" },
+                        { id: "19", title: "المحاضرة 9 فقه شافعي كتاب الصيام الجزء الخامس", url: "https://drive.google.com/file/d/1sVj16wJql5FYl0P6hSJMJ9ngWWyOJEC5/view?usp=drive_link" },
+                        { id: "20", title: "المحاضرة 10 فقه شافعي ", url: "" },
+                        { id: "21", title: "المحاضرة 12", url: "" },
+                        { id: "22, title: "المحاضرة 13", url: "" },
+                        { id: "23", title: "المحاضرة 14", url: "" },
+                        { id: "24", title: "المحاضرة 15", url: "" },
+                        { id: "25", title: "المحاضرة 16", url: "" },
+                        { id: "26", title: "المحاضرة 17", url: "" },
                     ]
                 },
                 {
                     id: "c_sep2",
-                    title: "كورس شهر 9 - الصف الثاني الثانوي (ترم أول)",
+                    title: "كورس الترم الاول - الصف الثاني الثانوي (ترم أول)",
                     instructor: "أ/ أبو بكر الشافعي",
                     grade: "الصف الثاني الثانوي",
-                    description: "متابعة منهج الترم الأول لشهر 9 مع الشرح المفصل والتطبيقات والأسئلة الشاملة.",
+                    description: "متابعة منهج الترم الأول مع الشرح المفصل والتطبيقات والأسئلة الشاملة.",
                     code: "SEP2026",
                     lessons: [
-                        { id: "l4", title: "المحاضرة الأولى: شرح دروس شهر 9 - القسم الأول", url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
-                        { id: "l5", title: "المحاضرة الثانية: شرح دروس شهر 9 - القسم الثاني", url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
-                        { id: "l6", title: "المحاضرة الثالثة: مراجعة واختبار شهر 9 (قريباً)", url: "" }
+                        { id: "l4", title: "المحاضرة الأولى", url: "" },
+                        { id: "l5", title: "المحاضرة الثانية", url: "" },
+                        { id: "l6", title: "المحاضرة الثالثة", url: "" }
                     ]
                 }
             ]
